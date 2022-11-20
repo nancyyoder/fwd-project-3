@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+// import Text from './Text.js';
+// import Page from './Page.js';
+import Page1 from './Page1.js';
+import Page2 from './Page2.js';
 import './App.css';
+
 
 function App() {
   return (
+    // should each page be a class (i.e. <Page1 />) or should they all be 1 class (i.e. <Page content = "" />)
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Page1 color='black' />
+      <Page2 color='black' />
+      
     </div>
   );
 }
