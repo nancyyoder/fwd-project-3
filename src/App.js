@@ -13,8 +13,9 @@ function App() {
   return (
     // should each page be a class (i.e. <Page1 />) or should they all be 1 class (i.e. <Page content = "" />)
     <div className="App">
+      <Page1 color='black'/>
       {/* <Pages12 /> */}
-      <Pages34 />
+      {/* <Pages34 /> */}
     </div>
   );
 }

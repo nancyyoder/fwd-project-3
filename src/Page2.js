@@ -14,12 +14,13 @@ export default class Page extends React.Component {
 
     sayHello() {
         console.log("should we change the font color?")
+        this.h1Color = 'black';
 
     }
 
     render() {
         const pageStyles = {
-            width: '50%',
+            width: '100%',
             height: '100%',
             background: `${this.color}`
         }
