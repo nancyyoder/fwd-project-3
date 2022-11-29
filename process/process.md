@@ -38,3 +38,9 @@ Goals:
     - Interactive game/experience (horoscope?)
     - More interactivity
     - Flip animation or scroll/appear animation
+
+# Milestone 2
+
+To get this project started I made a framework for the app by making "pages" objects which house all of the content for each unique page. I was then able to recreate the mockup I made for milestone 1 putting the image on page 1 and the text on page 2. I stuggled to figure out how to use adobe fonts on this site, but after watching tutorials I was able to do this quite easily. I haven't yet tested the interactivity I was planning on, but I will start working on that today. I am realizing that react is not as straightforward as I orginally thought and therefore I think this project will be less beautiful than I originally envisioned. But I will just try to work with what I can and still make something cool!
+
+
