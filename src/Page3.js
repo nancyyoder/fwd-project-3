@@ -115,7 +115,7 @@ export default class Page extends React.Component {
 
                 <div style={divStyles}>
                     <img src={sagitarius} alt="sagitarius"/>
-                    <h2 style={h2Styles}>SAGITARIUS</h2>    
+                    <h2 style={h2Styles}>SAGITTARIUS</h2>    
                 </div>
             </div>
         )
