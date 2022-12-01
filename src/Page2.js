@@ -1,33 +1,31 @@
 import React from 'react';
-// import './Page.css';
-// import { AdobeFonts } from 'react-adobe-fonts'
+
+const pink = '#ED2E8F';
+const green = '#069E68';
 
 export default class Page extends React.Component {
     constructor(props) {
-        super();
-        this.color = props.color;
-
-        this.h1Color = '#ED2E8F';
-
-        this.sayHello = this.sayHello.bind(this);
+        super(props);
+        this.state = { color: pink };
+        this.changeColor = this.changeColor.bind(this);
     }
 
-    sayHello() {
-        console.log("should we change the font color?")
-        this.h1Color = 'black';
-
+    changeColor(){
+        const newColor = this.state.color === pink ? green : pink;
+        this.setState({ color: newColor })
     }
 
     render() {
+
         const pageStyles = {
             width: '100%',
             height: '100%',
-            background: `${this.color}`
+            background: 'black'
         }
 
         const h1Styles = {
             fontSize: '3em',
-            color: `${this.h1Color}`,
+            color: `${this.state.color}`,
             fontFamily: 'superior-title, serif',
             fontWeight: '400',
             fontStyle: 'normal',
@@ -80,7 +78,7 @@ export default class Page extends React.Component {
 
         return (
             <div classname='Page' style={pageStyles}>
-                <h1 style={h1Styles} onClick={this.sayHello}>ACROSTIC POEMS ABOUT GOING GRAY IN MY 30s</h1>
+                <h1 style={h1Styles} onClick={this.changeColor}>ACROSTIC POEMS ABOUT GOING GRAY IN MY 30s</h1>
                 <h2 style={h2Styles}>By Kerry Elson</h2>
                 <h2 style={h2Styles}>July 10, 2021</h2>
                 <h3 style={h3Styles}>W</h3>
