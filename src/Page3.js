@@ -5,7 +5,11 @@ import capricorn from './capricorn.png';
 // import Capricorn from './Capricorn-txt2.png';
 
 import aquarius from './aquarius.png';
+// import Aquarius from './Aquarius-txt.png';
+
 import pisces from './pisces.png';
+// import Pisces from './Pisces-txt.png';
+
 import aries from './aries.png';
 import taurus from './taurus.png';
 import gemini from './gemini.png';
