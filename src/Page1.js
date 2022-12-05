@@ -2,7 +2,7 @@ import React from 'react';
 // import './Page.css';
 // import image from './image.png';
 import old_test from './old_test.png';
-import Page2 from './Page2.js';
+import Page2 from './Page1.2.js';
 import new_test from './new_test.png';
 
 const old_pic = old_test;
