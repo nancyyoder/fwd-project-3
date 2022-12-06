@@ -1,18 +1,16 @@
 import React from 'react';
-// import './Page.css';
-// import { AdobeFonts } from 'react-adobe-fonts'
-import capricorn from './capricorn.png';
-import aquarius from './aquarius.png';
-import pisces from './pisces.png';
-import aries from './aries.png';
-import taurus from './taurus.png';
-import gemini from './gemini.png';
-import cancer from './cancer.png';
-import leo from './leo.png';
-import virgo from './virgo.png';
-import libra from './libra.png';
-import scorpio from './scorpio.png';
-import sagitarius from './sagitarius.png';
+import capricorn from './img/capricorn.png';
+import aquarius from './img/aquarius.png';
+import pisces from './img/pisces.png';
+import aries from './img/aries.png';
+import taurus from './img/taurus.png';
+import gemini from './img/gemini.png';
+import cancer from './img/cancer.png';
+import leo from './img/leo.png';
+import virgo from './img/virgo.png';
+import libra from './img/libra.png';
+import scorpio from './img/scorpio.png';
+import sagitarius from './img/sagitarius.png';
 
 export default class Page extends React.Component {
     render(){
