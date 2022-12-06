@@ -46,6 +46,39 @@ export default class Page extends React.Component {
             margin: '0px',
         }
 
+        const h3Styles = {
+            fontSize: '4em',
+            color: '#ED2E8F',
+            fontFamily: 'bd-supper, sans-serif',
+            fontWeight: '700',
+            fontStyle: 'normal',
+            padding: '0px',
+            margin: '0px',
+            display: 'inline-block'
+        }
+
+        const pStyles = {
+            fontSize: '2em',
+            color: '#069E68',
+            fontFamily: 'poppins, sans-serif',
+            fontWeight: '400',
+            fontStyle: 'normal',
+            padding: '0px',
+            margin: '0px',
+            display: 'inline-block'
+        }
+
+        const pLineStyles = {
+            fontSize: '1.5em',
+            color: '#069E68',
+            fontFamily: 'poppins, sans-serif',
+            fontWeight: '400',
+            fontStyle: 'normal',
+            padding: '0px',
+            margin: '0px',
+            // display: 'inline-block'  
+        }
+
         return (
             <div classname='Page' style={pageStyles}>
                 <h1 style={h1Styles} onClick={this.changeColor}>ACROSTIC POEMS ABOUT GOING GRAY IN MY 30s</h1>

@@ -1,9 +1,24 @@
 import React from 'react';
-// import './Page.css';
-import image from './image.png';
-import Page2 from './Page2.js';
+import old_test from './img/old_test.png';
+import Page2 from './Page1.2.js';
+import new_test from './img/new_test.png';
+
+const old_pic = old_test;
+const new_pic = new_test;
 
 export default class Page extends React.Component {
+    constructor(props) {
+        super();
+        this.state = {click: true};
+        this.changePic = this.changePic.bind(this);
+    }
+
+    changePic() {
+        console.log(this.state.click);
+        this.setState((oldState) => (
+            {click: !oldState.click}
+        ));
+    }
 
     render() {
         const pageStyles = {
