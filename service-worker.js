@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "%7Bnancyyoder%7D.github.io/%7Bfwd-project-3%7D/precache-manifest.581a00017bc3376a7cbb259667e1a26d.js"
+  "/fwd-project-3/precache-manifest.716e0a2886e408ca415824d464911219.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("%7Bnancyyoder%7D.github.io/%7Bfwd-project-3%7D/index.html", {
+workbox.routing.registerNavigationRoute("/fwd-project-3/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
