@@ -10,13 +10,13 @@ export default class Page extends React.Component {
 
     render() {
         const pageStyles = {
-            width: '50%',
-            height: '100%',
+            width: '0%',
+            height: '0%',
             background: `${this.color}`
         }
 
         return (
-            <div classname='Page' style={pageStyles}>
+            <div className='Page' style={pageStyles}>
             </div>
         )
     }

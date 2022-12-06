@@ -15,6 +15,7 @@ import Page2 from './Page2.js';
 import Pages34 from './Pages34.js';
 // import Page5 from './Page5.js';
 
+
 function App() {
   let component = (
 
@@ -37,7 +38,17 @@ function App() {
     </BrowserRouter>
   )
 
+
+  const App = () => {
+    const handleClick = event => {
+      // 👇️ refers to the image element
+      console.log(event.target);
+  
+      console.log('Image clicked');
+    };
 }
+}
+
 export default App;
 
 
