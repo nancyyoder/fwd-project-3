@@ -17,7 +17,7 @@ export default class Page extends React.Component {
         }
 
         return (
-            <div classname='Page' style={pageStyles}>
+            <div className='Page' style={pageStyles}>
                 <img src={image} alt="art"/>
             </div>
         )

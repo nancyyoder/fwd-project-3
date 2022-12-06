@@ -10,7 +10,7 @@ export default class Page extends React.Component {
             background: 'black'
         }
         return(
-            <div classname='container' style={containStyles}></div>
+            <div className='container' style={containStyles}></div>
         );
     }
 }

@@ -7,6 +7,7 @@ import Page4 from './Page4.js';
 import './App.css';
 
 
+
 function App() {
   return (
     // should each page be a class (i.e. <Page1 />) or should they all be 1 class (i.e. <Page content = "" />)
@@ -17,6 +18,14 @@ function App() {
       <Page4 color='#B56DAD' />
     </div>
   );
-}
 
+  const App = () => {
+    const handleClick = event => {
+      // 👇️ refers to the image element
+      console.log(event.target);
+  
+      console.log('Image clicked');
+    };
+}
+}
 export default App;

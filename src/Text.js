@@ -13,7 +13,7 @@ export default class Text extends React.Component {
             fontFamily: 'Courier New'
         };
         return (
-            <p classname='mag-text' style={pStyles}>This is the text: </p>
+            <p className='mag-text' style={pStyles}>This is the text: </p>
         );
     }
 }
