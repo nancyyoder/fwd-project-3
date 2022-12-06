@@ -1,8 +1,8 @@
 // import './Page.css';
 // import image from './image.png';
 import React from 'react';
-import Page3 from './Page3.js';
-import Page4 from './Page4.js';
+import Page3 from './Page2.js';
+import Page4 from './Page2.2.js';
 
 export default class Page extends React.Component {
     constructor(props) {
