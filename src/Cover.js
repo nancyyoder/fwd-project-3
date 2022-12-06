@@ -1,10 +1,6 @@
 import React from 'react';
 
 export default class Page extends React.Component {
-    constructor(props) {
-        super();
-        this.color = props.color;
-    }
 
     render() {
         const pageStyles = {
@@ -15,7 +11,7 @@ export default class Page extends React.Component {
 
         return (
             <div className='Page' style={pageStyles}>
-                <h1>Game</h1>
+                <h1>Cover</h1>
             </div>
         )
     }

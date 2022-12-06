@@ -1,25 +1,23 @@
 // import React from 'react';
 import React, { useState } from "react";
-// import './Page.css';
-// import { AdobeFonts } from 'react-adobe-fonts'
-import capricorn from './capricorn.png';
-import Capricorn2 from './Capricorn-txt2.png';
+import capricorn from './horoscope/capricorn.png';
+import Capricorn2 from './horoscope/Capricorn-txt2.png';
 
-import aquarius from './aquarius.png';
-import Aquarius2 from './Aquarius-txt.png';
+import aquarius from './horoscope/aquarius.png';
+import Aquarius2 from './horoscope/Aquarius-txt.png';
 
-import pisces from './pisces.png';
-import Pisces2 from './Pisces-txt.png';
+import pisces from './horoscope/pisces.png';
+import Pisces2 from './horoscope/Pisces-txt.png';
 
-import aries from './aries.png';
-import taurus from './taurus.png';
-import gemini from './gemini.png';
-import cancer from './cancer.png';
-import leo from './leo.png';
-import virgo from './virgo.png';
-import libra from './libra.png';
-import scorpio from './scorpio.png';
-import sagitarius from './sagitarius.png';
+import aries from './horoscope/aries.png';
+import taurus from './horoscope/taurus.png';
+import gemini from './horoscope/gemini.png';
+import cancer from './horoscope/cancer.png';
+import leo from './horoscope/leo.png';
+import virgo from './horoscope/virgo.png';
+import libra from './horoscope/libra.png';
+import scorpio from './horoscope/scorpio.png';
+import sagitarius from './horoscope/sagitarius.png';
 
   
 
@@ -32,8 +30,6 @@ export default class Page extends React.Component {
 
 
     render() {
-
-        //all image states false except clicked image
         const Location = () => {
             const [imageClicked, setImageClicked] = useState({
               Capricorn: false,
@@ -57,7 +53,8 @@ export default class Page extends React.Component {
         const pageStyles = {
             width: '100%',
             height: '100%',
-            background: `${this.color}`
+            // background: 'black'
+            background: '#B56DAD'
         }
 
         const divStyles = {
@@ -73,7 +70,6 @@ export default class Page extends React.Component {
             fontStyle: 'normal',
             margin: '0px',
             textAlign: 'center'
-            // background: 'orange'
         }
         const h2Styles = {
             fontSize: '1.8em',
@@ -82,18 +78,17 @@ export default class Page extends React.Component {
             fontWeight: '500',
             fontStyle: 'normal',
             margin: '0px',
-            // display: 'inline-block'
-            // textAlign: 'center'
-            // background: 'orange'
         }
 
-        // const buttonStyles = {
-        //     fontSize: '2em',
-        //     color: 'white',
-        //     fontFamily: 'superior-title, serif',
-        //     fontWeight: '500',
-        //     fontStyle: 'normal',
-        // }
+        const secertMessage ={
+            color: '#B56DAD'  
+        }
+
+        const container={
+            display: 'flex',
+            flexWrap: 'wrap',
+            flex: '1 1 160px'
+        }
 
         return (
             <div className='Page' style={pageStyles}>
@@ -106,86 +101,85 @@ export default class Page extends React.Component {
                     
                 </div>
 
+                <div style={container}>
+                    <div style={divStyles}>
+                        <img src={capricorn} alt="capricorn"/>
+                        <h2 style={h2Styles}>CAPRICORN</h2>
+                        <button onClick={() => onClickHandler("Capricorn")} className="Capricorn">Capricorn Text</button>
+                    </div>
 
-                <div style={divStyles}>
-                    <img src={capricorn} alt="capricorn"/>
-                    <h2 style={h2Styles}>CAPRICORN</h2>
-                    {/* <button>Click Me</button> */}
-                    
-                    {/* <button>Click Me</button> */}
-                    {/* <button style={buttonStyles}>CAPRICORN</button> */}
-                    <button onClick={() => onClickHandler("Capricorn")} className="Capricorn">Capricorn Text</button>
+                    <div style={divStyles}>
+                        <img src={aquarius} alt="aquarius"/>
+                        <h2 style={h2Styles}>AQUARIUS</h2>
+                        <button onClick={() => onClickHandler("Aquarius")} className="Capricorn">Aquarius Text</button>
+
+                    </div>
+
+                    <div style={divStyles}>
+                        <img src={pisces} alt="pisces"/>
+                        <h2 style={h2Styles}>PISCES</h2>
+                        <button onClick={() => onClickHandler("Pisces")} className="Capricorn">Capricorn Text</button>
+
+                    </div>
+
+                    <div style={divStyles}>
+                        <img src={aries} alt="aries"/>
+                        <h2 style={h2Styles}>ARIES</h2>
+                        <button>Click Me</button>
+                    </div>
+
+                    <div style={divStyles}>
+                        <img src={taurus} alt="taurus"/>
+                        <h2 style={h2Styles}>TAURUS</h2>
+                        <button>Click Me</button>
+                    </div>
+
+                    <div style={divStyles}>
+                        <img src={gemini} alt="gemini"/>
+                        <h2 style={h2Styles}>GEMINI</h2>
+                        <button>Click Me</button>
+                    </div>
+
+                    <div style={divStyles}>
+                        <img src={cancer} alt="cancer"/>
+                        <h2 style={h2Styles}>CANCER</h2>
+                        <button>Click Me</button>
+                    </div>
+
+                    <div style={divStyles}>
+                        <img src={leo} alt="leo"/>
+                        <h2 style={h2Styles}>LEO</h2>
+                        <button>Click Me</button>
+                    </div>
+
+                    <div style={divStyles}>
+                        <img src={virgo} alt="virgo"/>
+                        <h2 style={h2Styles}>VIRGO</h2>
+                        <button>Click Me</button>
+                    </div>
+
+                    <div style={divStyles}>
+                        <img src={libra} alt="libra"/>
+                        <h2 style={h2Styles}>LIBRA</h2>
+                        <button>Click Me</button>
+                    </div>
+
+                    <div style={divStyles}>
+                        <img src={scorpio} alt="scorpio"/>
+                        <h2 style={h2Styles}>SCORPIO</h2>
+                        <button>Click Me</button>
+                    </div>
+
+                    <div style={divStyles}>
+                        <img src={sagitarius} alt="sagitarius"/>
+                        <h2 style={h2Styles}>SAGITTARIUS</h2>  
+                        <button>Click Me</button>
+                    </div>
                 </div>
-
-                <div style={divStyles}>
-                    <img src={aquarius} alt="aquarius"/>
-                    <h2 style={h2Styles}>AQUARIUS</h2>
-                    {/* <button>Click Me</button> */}
-                    <button onClick={() => onClickHandler("Aquarius")} className="Capricorn">Aquarius Text</button>
-
-                </div>
-
-                <div style={divStyles}>
-                    <img src={pisces} alt="pisces"/>
-                    <h2 style={h2Styles}>PISCES</h2>
-                    {/* <button>Click Me</button> */}
-                    <button onClick={() => onClickHandler("Pisces")} className="Capricorn">Capricorn Text</button>
-
-                </div>
-
-                <div style={divStyles}>
-                    <img src={aries} alt="aries"/>
-                    <h2 style={h2Styles}>ARIES</h2>
-                    <button>Click Me</button>
-                </div>
-
-                <div style={divStyles}>
-                    <img src={taurus} alt="taurus"/>
-                    <h2 style={h2Styles}>TAURUS</h2>
-                    <button>Click Me</button>
-                </div>
-
-                <div style={divStyles}>
-                    <img src={gemini} alt="gemini"/>
-                    <h2 style={h2Styles}>GEMINI</h2>
-                    <button>Click Me</button>
-                </div>
-
-                <div style={divStyles}>
-                    <img src={cancer} alt="cancer"/>
-                    <h2 style={h2Styles}>CANCER</h2>
-                    <button>Click Me</button>
-                </div>
-
-                <div style={divStyles}>
-                    <img src={leo} alt="leo"/>
-                    <h2 style={h2Styles}>LEO</h2>
-                    <button>Click Me</button>
-                </div>
-
-                <div style={divStyles}>
-                    <img src={virgo} alt="virgo"/>
-                    <h2 style={h2Styles}>VIRGO</h2>
-                    <button>Click Me</button>
-                </div>
-
-                <div style={divStyles}>
-                    <img src={libra} alt="libra"/>
-                    <h2 style={h2Styles}>LIBRA</h2>
-                    <button>Click Me</button>
-                </div>
-
-                <div style={divStyles}>
-                    <img src={scorpio} alt="scorpio"/>
-                    <h2 style={h2Styles}>SCORPIO</h2>
-                    <button>Click Me</button>
-                </div>
-
-                <div style={divStyles}>
-                    <img src={sagitarius} alt="sagitarius"/>
-                    <h2 style={h2Styles}>SAGITTARIUS</h2>  
-                    <button>Click Me</button>
-                </div>
+                <h1 style={secertMessage}> If you're reading this   </h1>
+                <h1 style={secertMessage}> please give us an A   </h1>
+                <h1 style={secertMessage}> we are so smart and crafty   </h1>
+                <h1 style={secertMessage}> and we work so hard   </h1>
             </div>
         )
     }
