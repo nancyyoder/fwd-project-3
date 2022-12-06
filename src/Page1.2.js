@@ -85,7 +85,7 @@ export default class Page extends React.Component {
                 <p style={pStyles}>hite hairs multiplying</p> 
                 <br></br>
                 <h3 style={h3Styles}>O</h3>
-                <p style={pStyles}>n temples, and even on top of my head.</p> 
+                <p style={pStyles}>n temples, and on my head.</p> 
                 <br></br>
                 <h3 style={h3Styles}>W</h3>
                 <p style={pStyles}>hat should I do about them?</p> 
