@@ -6,18 +6,28 @@ export default class Page extends React.Component {
     constructor(props) {
         super();
         this.color = props.color;
+
+        this.h1Color = '#ED2E8F';
+
+        this.sayHello = this.sayHello.bind(this);
+    }
+
+    sayHello() {
+        console.log("should we change the font color?")
+        this.h1Color = 'black';
+
     }
 
     render() {
         const pageStyles = {
-            width: '50%',
+            width: '100%',
             height: '100%',
             background: `${this.color}`
         }
 
         const h1Styles = {
             fontSize: '3em',
-            color: '#ED2E8F',
+            color: `${this.h1Color}`,
             fontFamily: 'superior-title, serif',
             fontWeight: '400',
             fontStyle: 'normal',
@@ -70,7 +80,7 @@ export default class Page extends React.Component {
 
         return (
             <div classname='Page' style={pageStyles}>
-                <h1 style={h1Styles}>ACROSTIC POEMS ABOUT GOING GRAY IN MY 30s</h1>
+                <h1 style={h1Styles} onClick={this.sayHello}>ACROSTIC POEMS ABOUT GOING GRAY IN MY 30s</h1>
                 <h2 style={h2Styles}>By Kerry Elson</h2>
                 <h2 style={h2Styles}>July 10, 2021</h2>
                 <h3 style={h3Styles}>W</h3>
