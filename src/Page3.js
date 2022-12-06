@@ -1,14 +1,15 @@
-import React from 'react';
+// import React from 'react';
+import React, { useState } from "react";
 // import './Page.css';
 // import { AdobeFonts } from 'react-adobe-fonts'
 import capricorn from './capricorn.png';
-// import Capricorn from './Capricorn-txt2.png';
+import Capricorn2 from './Capricorn-txt2.png';
 
 import aquarius from './aquarius.png';
-// import Aquarius from './Aquarius-txt.png';
+import Aquarius2 from './Aquarius-txt.png';
 
 import pisces from './pisces.png';
-// import Pisces from './Pisces-txt.png';
+import Pisces2 from './Pisces-txt.png';
 
 import aries from './aries.png';
 import taurus from './taurus.png';
@@ -20,35 +21,41 @@ import libra from './libra.png';
 import scorpio from './scorpio.png';
 import sagitarius from './sagitarius.png';
 
+  
 
 export default class Page extends React.Component {
     constructor(props) {
         super();
         this.color = props.color;
     }
-
-    // const Location = () => {
-    //     const [imageClicked, setImageClicked] = useState({
-    //       first: false,
-    //       second: false,
-    //       ground: false
-    //     });
-    //     const onClickHandler = (order) => {
-    //         const resetImages = {
-    //           first: false,
-    //           second: false,
-    //           ground: false
-    //         }
-    //         setImageClicked({
-    //           ...resetImages,
-    //           [order]: true
-    //         });
-    //       };
+      
 
 
     render() {
+
+        //all image states false except clicked image
+        const Location = () => {
+            const [imageClicked, setImageClicked] = useState({
+              Capricorn: false,
+              Aquarius: false,
+              Pisces: false
+            })
+            const onClickHandler = (order) => {
+                const resetImages = {
+                    Capricorn: false,
+                    Aquarius: false,
+                    Pisces: false
+                }
+                setImageClicked({
+                  resetImages,
+                  [order]: true
+                })
+              }
+
+
+
         const pageStyles = {
-            width: '52%',
+            width: '100%',
             height: '100%',
             background: `${this.color}`
         }
@@ -89,34 +96,41 @@ export default class Page extends React.Component {
         // }
 
         return (
-            <div classname='Page' style={pageStyles}>
+            <div className='Page' style={pageStyles}>
                 <h1 style={h1Styles}>HOROSCOPES</h1>
 
                 <div className="image">
-                    {/* {imageClicked.ground && <img src={Capricorn} alt="ground" />} */}
-                    {/* {imageClicked.first && <img src={img6} alt="first" />} */}
-                    {/* {imageClicked.second && <img src={img7} alt="second" />} */}
+                    {imageClicked.Capricorn && <img src={Capricorn2} alt="Capricorn" />}
+                    {imageClicked.Aquarius && <img src={Aquarius2} alt="Aquarius" />}
+                    {imageClicked.Pisces && <img src={Pisces2} alt="Pisces" />} 
+                    
                 </div>
+
 
                 <div style={divStyles}>
                     <img src={capricorn} alt="capricorn"/>
                     <h2 style={h2Styles}>CAPRICORN</h2>
-                    <button>Click Me</button>
+                    {/* <button>Click Me</button> */}
+                    
                     {/* <button>Click Me</button> */}
                     {/* <button style={buttonStyles}>CAPRICORN</button> */}
-                    {/* <button onClick={() => onClickHandler("ground")} className="ground">Ground Floor</button> */}
+                    <button onClick={() => onClickHandler("Capricorn")} className="Capricorn">Capricorn Text</button>
                 </div>
 
                 <div style={divStyles}>
                     <img src={aquarius} alt="aquarius"/>
                     <h2 style={h2Styles}>AQUARIUS</h2>
-                    <button>Click Me</button>
+                    {/* <button>Click Me</button> */}
+                    <button onClick={() => onClickHandler("Aquarius")} className="Capricorn">Aquarius Text</button>
+
                 </div>
 
                 <div style={divStyles}>
                     <img src={pisces} alt="pisces"/>
                     <h2 style={h2Styles}>PISCES</h2>
-                    <button>Click Me</button>
+                    {/* <button>Click Me</button> */}
+                    <button onClick={() => onClickHandler("Pisces")} className="Capricorn">Capricorn Text</button>
+
                 </div>
 
                 <div style={divStyles}>
@@ -175,5 +189,8 @@ export default class Page extends React.Component {
             </div>
         )
     }
-    
+    return <Location/>
 }
+
+}
+

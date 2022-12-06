@@ -18,11 +18,16 @@ export default class Page extends React.Component {
         }
 
         return (
+
+            <div className='Page' style={pageStyles}>
+                <img src={image} alt="art"/>
+
             <div>
                 <div classname='Page' style={pageStyles}>
                     <img src={image} alt="art"/>
                     <Page2 color='black' />
                 </div>
+
             </div>
 
         )
