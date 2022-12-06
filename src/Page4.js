@@ -1,7 +1,5 @@
 import React from 'react';
 // import boots from './boots.png';
-import boots from './img/libra.png';
-import aries from './img/aries.png';
 
 //import './page5.css';
 const img = 'url("./boots.png")'

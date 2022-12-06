@@ -23,27 +23,24 @@ export default class Page extends React.Component {
             background: 'black'
         }
 
-        const divStyles = {
-            textAlign: 'center',
-            display: 'inline-block'
-        }
-
         const h1Styles = {
             fontSize: '3em',
-            color: `${this.h1Color}`,
+            color: `${this.state.color}`,
             fontFamily: 'superior-title, serif',
-            fontWeight: '500',
+            fontWeight: '400',
             fontStyle: 'normal',
             margin: '0px',
-            textAlign: 'center'
+            // background: 'orange'
         }
         const h2Styles = {
             fontSize: '2em',
-            color: 'white',
+            color: '#069E68',
             fontFamily: 'superior-title, serif',
-            fontWeight: '500',
-            fontStyle: 'normal',
+            fontWeight: '400',
+            fontStyle: 'italic',
+            padding: '0px',
             margin: '0px',
+            // background: 'yellow'
         }
 
         const h3Styles = {
@@ -88,7 +85,7 @@ export default class Page extends React.Component {
                 <p style={pStyles}>hite hairs multiplying</p> 
                 <br></br>
                 <h3 style={h3Styles}>O</h3>
-                <p style={pStyles}>n temples, and even on my head.</p> 
+                <p style={pStyles}>n temples, and on my head.</p> 
                 <br></br>
                 <h3 style={h3Styles}>W</h3>
                 <p style={pStyles}>hat should I do about them?</p> 

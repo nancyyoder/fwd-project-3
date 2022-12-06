@@ -1,6 +1,6 @@
 import React from 'react';
 import old_test from './img/old_test.png';
-import Page2 from './Page1.2.js';
+import Page2 from './Page2.js';
 import new_test from './img/new_test.png';
 
 const old_pic = old_test;
