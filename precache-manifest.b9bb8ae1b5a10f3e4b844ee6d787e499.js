@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "38ac7a5fbff298247da8",
+    "revision": "c7b2496a0c4b1ddb806a",
     "url": "/fwd-project-3/static/css/main.b7ce9f3c.chunk.css"
   },
   {
-    "revision": "38ac7a5fbff298247da8",
-    "url": "/fwd-project-3/static/js/main.7ee654de.chunk.js"
+    "revision": "c7b2496a0c4b1ddb806a",
+    "url": "/fwd-project-3/static/js/main.9114b727.chunk.js"
   },
   {
     "revision": "4c4de0ab1e04a26746bc",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/fwd-project-3/static/media/Pisces-txt.a6d14a8c.png"
   },
   {
-    "revision": "8032b1297dc6004d8b37cb6b23bd2e31",
+    "revision": "248389a327cd8a65297c5b3213e2e4a2",
     "url": "/fwd-project-3/index.html"
   }
 ];
