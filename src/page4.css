@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Lobster&family=Ultra&display=swap');
+
+.wavy {
+    position: relative;
+    display:inline;
+    margin-left:0.5em;
+    margin-right:0.5em;
+}
+
+h1{
+    font-family: 'Caveat', cursive;
+}
+.wavy span {
+    
+    position: relative;
+    display: inline-block;
+    color: #C79871;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    animation: animate 2s ease-in-out infinite;
+}
+
+#first{
+    animation-delay: 0.1s;
+}
+#second{
+    animation-delay: 0.2s;
+}
+#third{
+    animation-delay: 0.3s;
+}
+#fourth{
+    animation-delay: 0.4s;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+
+    40%,
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* geeks for geeks code*/
+.colorChange{
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+    animation: colorChange 2s ease-in-out infinite alternate;
+    animation-duration: infinite;
+    display: inline;
+    margin-left: 0.5em;
+    margin-right:0.5em;
+}
+
+@keyframes colorChange {
+    from {color: lightblue;}
+    to {color: #ff00a6;}
+}
+
+.glow {
+    font-size: 80px;
+    color: #000;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    display: inline;
+    margin-left:0.5em;
+    margin-right:0.5em;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(251, 251, 41), 0 0 40px rgb(251, 251, 41), 0 0 50px rgb(251, 251, 41), 0 0 60px rgb(251, 251, 41), 0 0 70px rgb(251, 251, 41);
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px rgb(255, 255, 122), 0 0 40px rgb(255, 255, 122), 0 0 50px rgb(255, 255, 122), 0 0 60px rgb(255, 255, 122), 0 0 70px rgb(255, 255, 122), 0 0 80px rgb(255, 255, 122);
+    }
+  }
+
+.question-card{
+    background-color:black;
+    border-radius:3em;
+    border:2px solid white;
+    align-items: center;
+    margin:1em;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+#listElements{
+    color:white;
+    list-style: none;
+    border-radius:1em;
+    margin-left:2em;
+    text-align: center;
+    border:1px solid white;
+}
+
+ul{
+    margin: 0em;   
+     margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+}
