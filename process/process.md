@@ -43,4 +43,19 @@ Goals:
 
 To get this project started I made a framework for the app by making "pages" objects which house all of the content for each unique page. I was then able to recreate the mockup I made for milestone 1 putting the image on page 1 and the text on page 2. I stuggled to figure out how to use adobe fonts on this site, but after watching tutorials I was able to do this quite easily. I haven't yet tested the interactivity I was planning on, but I will start working on that today. I am realizing that react is not as straightforward as I orginally thought and therefore I think this project will be less beautiful than I originally envisioned. But I will just try to work with what I can and still make something cool!
 
+# Milestone 3
+
+Here is a link to the final website:
+[Digital Magazine](https://nancyyoder.github.io/Cover)
+
+# Milestone 4
+
+Overall, this project was very daunting, but turned out to be easier than I thought it would be when it was all said and done. Being a newbie to React, I was able to understand the file structure and layout, but working with state proved to be more difficult than I expected. I ended up not including as much interactivity as I originally planned. Most of the time spent on this project was setting up the site, compiling all of our work together, and deploying the website. 
+
+In regards to the original goals we set, we were able to achieve interactivity with image and type in react, as well as an interactive poem, horoscope reading, and game. We changed page navigation from scrolling to a navigation bar, so goals relating to scrolling are no longer relevant. We made this decision after making the initial spreads because we thought it made more sense for the overall hierarchy of our site. 
+
+We ended up achieving a good amount of interactivity between the three different spreads. I would've liked a little more fluid interactivity, rather than straightforward button presses, but given the time we had I think we achieved a solid site. 
+
+I am very happy that I now can say I have experience with React. Even though I am not an expert, having my foot in the door with React is still a marketable skill. Overall, I had a good experience with the project and my group and I am proud of what we came up with. 
+
 
