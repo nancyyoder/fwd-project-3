@@ -1,10 +1,9 @@
 import React from 'react';
-// import img from './img/boots.png';
-import img2 from './img/sunset.png';
 import arctic from './img/arctic.png';
 import './page4.css';
 
-const img = 'url("./img/boots.png")'
+const img = 'url("./boots.png")'
+const img2 = 'url("./sunset.png")'
 const white = '#FFFFFF'
 const black = '#000000'
 const none = ''
@@ -16,7 +15,7 @@ export default class Page extends React.Component {
         super(props);
         this.state = { backgroundImage: none,
             backgroundImage2: none,
-            color: black,
+            changeColor: black,
             visibility: off,
             visibility2: off
          };
@@ -31,7 +30,6 @@ export default class Page extends React.Component {
         console.log("is correct here")
         this.setState({ visibility: off })
         this.setState({ visibility2: off })
-        const newText = this.state.visibility === off ? on : off;
         this.setState({ visibility: on })
 
     }
@@ -39,24 +37,23 @@ export default class Page extends React.Component {
     isWrong(){
         this.setState({ visibility2: off })
         this.setState({ visibility: off })
-        const newText2 = this.state.visibility2 === off ? on : off;
         this.setState({ visibility2: on })
     }
 
 
     changeImg(){
-        this.setState({ backgroundImage: none });
+        this.setState({ backgroundImage: none })
         const newImg = this.state.backgroundImage === none ? img : none;
-        this.setState({ backgroundImage: newImg });
+        this.setState({ backgroundImage: newImg })
     }
 
     changeImg2(){
         this.setState({ backgroundImage2: none })
-        this.setState({ color: black })
+        this.setState({ changeColor: black })
         const newImg2 = this.state.backgroundImage2 === none ? img2 : none;
         const newColor = this.state.changeColor === black ? white : black;
         this.setState({ backgroundImage2: newImg2 })
-        this.setState({ color: white })
+        this.setState({ changeColor: newColor })
     }
     
 
@@ -114,7 +111,7 @@ export default class Page extends React.Component {
              fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
              fontWeight: '600',
              fontSize: '1.4em',
-             color: `${this.state.color}`,
+             color: `${this.state.changeColor}`,
              backgroundPosition: 'center center',
              backgroundRepeat: 'no-repeat',
              backgroundSize: 'fit',
