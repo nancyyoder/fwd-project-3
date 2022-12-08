@@ -1,4 +1,5 @@
 import React from 'react';
+import flatirons from './img/flatirons.png';
 
 export default class Page extends React.Component {
 
@@ -9,9 +10,14 @@ export default class Page extends React.Component {
             background: 'white'
         }
 
+        const coverStyles = {
+            width: '1920px',
+            height: '1080px'
+        }
+
         return (
             <div className='Page' style={pageStyles}>
-                <h1>Cover</h1>
+                <img src={flatirons} alt={"cover image"}/>
             </div>
         )
     }
